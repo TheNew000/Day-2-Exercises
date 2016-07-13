@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css" media="screen">
+		.topnav{
+			/* Get Rid of the stupid bullet points on our list items */
+			list-style: none;
+			/* Set background color */
+			background-color: #fff;
+			/* force my bratty children to send their height up to me */
+			overflow: hidden;
+			/* set a position of fixed so that when the user scrolls i stay visible */
+			position: fixed;
+			/* now that it's fixed I need a set width */
+			top: 0px;
+			right: 0px;
+			/* force the ul to start with 0 padding and zero pixels so the browser does not interfere */
+			margin: 15px;
+		}
+		.menu-item.initial{
+			top: 5px;
+		    border-radius: 50%;
+		    background: #194d33;
+		    width: 32px;
+		    height: 32px;
+		    color: white;
+		    box-sizing: border-box;
+		    text-align: center;
+		}
+
+		.menu-item.bell{
+		    border-radius: 50%;
+		    background: #666;
+		    width: 20px;
+		    height: 20px;
+		    margin-top: 15px;
+		}
+
+		.menu-item{
+			/* put list items next to one another */
+			float: left;
+			/* set the font color to white */
+			color: #666;
+			margin: 10px;
+		}
+		
+		.menu-item.text{
+			margin-top: 15px;
+		}
+		/* we need to set a hover background color */
+		.menu-item:hover{
+			background-color: #777;
+		}
+			/* target the element with both clases */
+		.menu-item.about{
+			/* set the bg color to green */
+			background-color: #4caf50;
+			/* float element to the right of it's parent */
+			float: right;
+		}
+
+		#logo{
+			height: 92px;
+			width: 272px;
+			top: 200px;
+			left: 500px;
+			margin: auto;
+			position: fixed;
+		}
+
+		.list{
+			float: right;
+		}
+
+		#form{
+			position: absolute;
+			left: 350px;
+			top: 300px;
+		}
+
+		input[type="text"] {
+		    font-size:25px;
+		    width: 550px;
+		}
+		.mic img{
+			top: 304px;
+			right: 360px;
+			position: absolute;
+			height: 30px;
+			width: 30px;
+		}
+
+		.click {
+		    background-color: #bfbfbf;
+		    border: 1px solid #f2f2f2;
+		    border-radius: 2px;
+		    color: #757575;
+		    cursor: default;
+		    font-family: arial,sans-serif;
+		    font-size: 13px;
+		    font-weight: bold;
+		    margin: 11px 4px;
+		    min-width: 54px;
+		    padding: 0 16px;
+		    text-align: center;
+		    height: 36px;
+		    line-height: 27px;
+		}
+
+		.buttons{
+			top: 350px;
+			left: 500px;
+			position: absolute;
+		}
+
+		.btmnav {
+		    list-style-type: none;
+		    margin: 0;
+		    padding: 0;
+		    overflow: hidden;
+		    background-color: #f2f2f2;
+		    width: 100%;
+		    height: 40px;
+			bottom: 0;
+		    right: 0;
+		    left: 0;
+			position: absolute;
+		}
+
+		.btm-item {
+		    float: left;
+		    display: block;
+		    color: #666;
+		    font-family: arial,sans-serif;
+		    text-align: center;
+		    padding: 0px 16px;
+		    text-decoration: none;
+		}
+
+		.btm-item.b{
+			float: right;
+		}
+
+	</style>
+</head>
+<body>
+		<div class="list">
+		<ul class="topnav">
+			<li class="menu-item text">Gmail</li>
+			<li class="menu-item text">Images</li>
+			<li class="menu-item box"><img src="images/boxes.png" alt=""></li>
+			<li class="menu-item bell"></li>
+			<li class="menu-item initial">D</li>
+		</ul>
+		</div>
+
+	<div id="logo">
+		<img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="">
+	</div>
+	<div id="form">
+		<form>
+			<input type="text" name="search">
+		</form>
+	</div>
+	<div class="mic"><img src="images/mic.png"></div>
+	<div class="buttons">
+		<input value="Google Search" aria-label="Google Search" class="click" type="submit">
+		<input value="I'm Feeling Lucky" aria-label="I'm Feeling Lucky" class="click" type="submit">
+	</div>
+
+	<footer class="btmnav">
+		<ul>
+			<li class="btm-item">Advertising</li>
+			<li class="btm-item">Business</li>
+			<li class="btm-item">About</li>
+			<li class="btm-item b">Privacy</li>
+			<li class="btm-item b">Terms</li>
+			<li class="btm-item b">Settings</li>
+		</ul>
+	</footer>
+
+</body>
+</html>

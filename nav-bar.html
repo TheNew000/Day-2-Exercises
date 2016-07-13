@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css" media="screen">
+		ul{
+			/* Get Rid of the stupid bullet points on our list items */
+			list-style: none;
+			/* Set background color */
+			background-color: #333;
+			/* force my bratty children to send their height up to me */
+			overflow: hidden;
+			/* set a position of fixed so that when the user scrolls i stay visible */
+			position: fixed;
+			/* now that it's fixed I need a set width */
+			width: 100%;
+			/* set the starting point for our nav bar */
+			top: 0px;
+			left: 0px;
+			/* force the ul to start with 0 padding and zero pixels so the browser does not interfere */
+			padding: 0px;
+			margin: 0px;
+		}
+
+		.menu-item{
+			/* put list items next to one another */
+			float: left;
+			/* set the font color to white */
+			color: white;
+			/* set the padding */
+			padding: 14px 16px;
+		}
+		/* we need to set a hover background color */
+		.menu-item:hover{
+			background-color: #777;
+		}
+			/* target the element with both clases */
+		.menu-item.about{
+			/* set the bg color to green */
+			background-color: #4caf50;
+			/* float element to the right of it's parent */
+			float: right;
+		}
+
+		#content{
+			width: 50%;
+			text-align: center;
+			margin: auto;
+			height: 150vh;
+			margin-top: 46px;
+		}
+	</style>
+</head>
+<body>
+
+	<header>
+		<ul>
+			<li class="menu-item">Home</li>
+			<li class="menu-item">News</li>
+			<li class="menu-item">Contacts</li>
+			<li class="menu-item about">About</li>
+		</ul>
+	</header>
+
+	<div id="content">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor voluptatibus ratione laudantium aliquam placeat atque, adipisci, ullam, perspiciatis reprehenderit, soluta veritatis expedita. Iusto architecto nobis magni, voluptatem nesciunt vitae natus.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores labore tempora, ab vero dolorum praesentium natus necessitatibus explicabo quo temporibus assumenda maiores molestias ex est totam eum tempore aliquid quia!
+	</div>
+
+</body>
+</html>
